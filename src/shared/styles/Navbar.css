@@ -1,0 +1,64 @@
+.navbar {
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Logo styling */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  /* Responsive Hamburger menu styling */
+  .hamburger {
+    display: none; /* Hidden on larger screens */
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  .hamburger.open .line {
+    background-color: #f00; /* Change color when menu is open */
+  }
+  
+  /* Language Selector styling */
+  .lang-selector {
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  /* Show hamburger menu on mobile */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .logo {
+      font-size: 1.25rem;
+    }
+  
+    .lang-selector {
+      display: none;
+    }
+  }
+  

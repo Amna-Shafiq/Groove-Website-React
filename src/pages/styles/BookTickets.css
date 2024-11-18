@@ -1,0 +1,74 @@
+#book-tickets{
+    background: linear-gradient(to right,#283606, #0F1500);
+    position: relative;
+    width: 100%;
+    min-height:100vh;
+    color:white;
+    padding-top:22px;
+}
+.green-rectangle{
+    width: 840px; 
+    height: 171px; 
+    margin: 22px 113px;
+    padding:32px;
+    background: linear-gradient(to right,#344508, #243200);
+    
+    border-radius: 25px;
+   
+}
+.heading-with-arrow {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.book-tickets-content {
+    padding:0 142px;
+    
+}
+
+.book-tickets-content > h1{
+    font-size: 40px;
+
+}
+.book-btn{
+    margin-bottom: 63px;
+}
+.image-scroll {
+    overflow-x: auto; 
+    white-space: nowrap; 
+    width: 100%; 
+}
+
+.image-container {
+     display: flex;
+    gap: 25px; 
+
+}
+
+.image-container img {
+    width: auto; 
+    height: auto; 
+    max-height: none; 
+    display: inline-block; 
+    
+}
+
+.image-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.image-scroll {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+}
+.image-title {
+    margin-top: 10px; 
+    font-size: 16px; 
+    color: #fff;
+    font-family: "Playfair Display", serif; 
+}
+
+.image-item > h2{
+    font-size: 25px;
+}

@@ -1,0 +1,110 @@
+
+@media screen and (max-width: 390px) {
+.hamburger-menu 
+{
+    display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        cursor: pointer;
+  }
+  .hamburger-icon,
+  .hamburger-icon-close {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .hamburger-icon .bar,
+  .hamburger-icon-close .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #DCBB75;
+    border-radius: 5px;
+  }
+  
+  .hamburger-content {
+    display: none;
+    background: linear-gradient(to right, #283606, #0F1500);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    z-index: 999;
+    overflow-x: hidden;
+  }
+  
+  .hamburger-content.active {
+    display: block;
+  }
+  
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 0.5px solid yellow;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social-media a {
+    font-size: 20px;
+    color: #fff;
+  }
+  
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-media a {
+    font-size: 20px;
+    color: #fff;
+}
+
+.language-switch {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.language-switch button {
+    
+    padding: 8px 15px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: #333;
+}
+
+.hamburger-icon-close {
+    /* display: flex; */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: #AD8749;
+}
+}

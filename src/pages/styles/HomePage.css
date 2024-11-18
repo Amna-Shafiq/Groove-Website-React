@@ -1,0 +1,240 @@
+body{
+    margin:0;
+    color:whitesmoke;
+    font-family: 'Inter';
+    }
+    .section{
+        min-height:100vh;
+        background: linear-gradient(to right,#283606, #0F1500);
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+    }
+    #hero{
+        background: url('../../assets/background.png') 0% 0% no-repeat;
+        background-position: top left;
+        background-size: 110%;
+        min-height: 100vh;
+        padding-left: 139px;
+        padding-right: 139px;
+        /* position: relative; */
+        color:white;
+    }
+     #header {  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-transform: uppercase;
+        padding-top: 21px;
+    }
+    .top-bar {
+        display: flex;
+        align-items: center; 
+        justify-content: space-between; 
+        
+    }
+    
+    
+    .logo{
+        opacity: 1;
+    }
+    .logo img {
+        width: 220px;
+        height: auto;  
+    }
+    .nav-container{
+        margin-top: 1rem;
+        width: calc(100% + 278px); 
+        margin-left: -139px;   
+        border-top: 0.5px solid #d0cd75;
+        border-bottom: 0.5px solid #d0cd75;
+        
+    }
+    .nav-list{
+        font-size: 13px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        padding-left:139px;
+        padding-right:139px;
+        align-items: center;
+    }
+    
+    .nav-list a {
+        text-decoration: none; 
+        color: #fff; 
+        padding: 0.5rem;
+        font-size: 15px;
+    }
+    .social-icons {
+        margin-left: auto;
+    }
+    
+    .social-icons a {
+        color: #939393;
+        font-size: 1.2rem;
+        margin-right: 21px;
+    }
+    
+    .social-icons a:hover {
+        color: #fff;
+    }
+    
+    .language-switch {
+        position: relative;
+        width: 150px;
+    }
+    
+    .language-select {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 8px;
+        padding: 0.3rem 1rem;
+        cursor: pointer;
+    }
+    
+    .selected-language-icon {
+        width: 20px;
+        height: auto;
+        margin-right: 8px;
+    }
+    
+    .language-options {
+        display: none; 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #111;
+        /* border: 1px solid #D4AF37; */
+        border-radius: 8px;
+        z-index: 10;
+    }
+    
+    .language-option {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+    }
+    
+    .language-option:hover {
+        background-color: #333;
+    }
+    .language-options.show {
+        display: block; 
+    }
+    
+    .language-icon {
+        width: 20px;
+        height: auto;
+        margin-right: 8px;
+    }
+    
+    .css-btn{
+        background-image: linear-gradient(#AD8749, #DCBB75);
+        border-radius: 16px;
+        padding:15px 32px;
+        opacity: 1;
+        color: white;
+      }
+    .reservation-btn{
+        margin-bottom: 161px;
+    }
+    .hero-body{
+        padding-top: 114px;
+        color: white;
+    
+    }
+    .hero-body > h1{
+        font-size: 40px;
+    }
+    .hamburger-menu{
+        display: none;
+    }
+    /* .hamburger-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        cursor: pointer;
+    }
+    
+    .hamburger-icon,
+    .hamburger-icon-close {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        z-index: 1001;
+    }
+    
+    .hamburger-icon .bar,
+    .hamburger-icon-close .bar {
+        width: 30px;
+        height: 4px;
+        background-color: #DCBB75;
+        border-radius: 5px;
+    }
+    .hamburger-menu.open .hamburger-icon {
+        display: none;
+    }
+    
+    .hamburger-menu.open .hamburger-icon-close {
+        display: flex;
+    }
+    
+    .hamburger-content{
+        display: none;
+    } */
+    @media screen and (max-width: 390px) {
+        html, body {overflow-x: hidden;}
+        #hero {
+            overflow-x: hidden;
+            background: url('../../assets/background.png') 0% 0% no-repeat;
+            background-position: top left;
+            padding-left: 31px;
+       
+        }
+        .top-bar .css-btn {
+            display: none;
+        }
+    
+        .logo img {
+            width: 150px; 
+        }
+        .language-switch {
+            display: none;
+        }
+    
+        .hero-body {
+            text-align: left; 
+            padding: 0; 
+            margin-top:140px;
+            
+            width: 100%;
+        }
+    
+        .hero-body h1 {
+            font-size: 35px; 
+            text-align: left; 
+        }
+    
+        .hero-body p {
+            font-size: 20px; 
+        }
+    
+        .reservation-btn {
+            padding: 10px 20px;
+        }
+    
+        .nav-container,
+        .social-icons {
+            display: none; 
+        } 
+    }
+    
+    
+    
