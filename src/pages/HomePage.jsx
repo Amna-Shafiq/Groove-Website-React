@@ -4,6 +4,7 @@ import logo from "../assets/PHOTO-2021-06-16-18-42-19_copy_2@2x.png";
 import LanguageSelector from '../shared/components/LanguageSelector';
 import '../shared/styles/LanguageSelector.css';
 import Hamburger from '../shared/components/Hamburger';
+import Rectangle from '../assets/Rectangle 18780.png';
 
 
 
@@ -20,8 +21,10 @@ const HomePage = ({ scrollToSection }) => {
     setDropdownOpen(false);
   };
   return(
-  <section id="hero" className="section">
-    <header id="header">
+  <section id="hero" className="section"> 
+    <header id="header" style={{
+          position: "relative",
+          zIndex:2}}>
       <div className="top-bar">
         <div className="logo">
           <img src={logo}/>
@@ -41,13 +44,13 @@ const HomePage = ({ scrollToSection }) => {
       />
       </div>
 
-      <nav className="nav-container">
+      <nav className="nav-container" >
         <ul className="nav-list">
           <li><a href="#Mall" onClick={scrollToSection}>Dine With Us</a></li>
           <li><a href="#book-tickets" onClick={scrollToSection} >Plan Your Visit</a></li>
           <li><a href="#finest-cuisine" onClick={scrollToSection}>Events</a></li>
           <li><a href="#" onClick={scrollToSection}>View Grooves Map</a></li>
-          <li><a href="#" onClick={scrollToSection}>Our Story</a></li>
+          <li><a href="#experience" onClick={scrollToSection}>Our Story</a></li>
           <li><a href="#" onClick={scrollToSection}>Contact Us</a></li>
         </ul>
       </nav>
@@ -55,7 +58,9 @@ const HomePage = ({ scrollToSection }) => {
 
     <Hamburger className="hamburger-menu" />
 
-    <div className="hero-body">
+    <div className="hero-body" style={{
+          position: "relative",
+          zIndex:2}}>
       <p>Khawaja Yanni</p>
       <h1>The new <br /> era of luxury</h1>
       <p>Lorem Ipsum is simply dummy text of the printing and<br /> typesetting industry.</p>
@@ -63,6 +68,17 @@ const HomePage = ({ scrollToSection }) => {
         Book reservation now <i className="fa fa-arrow-right"></i>
       </button>
     </div>
+    <img
+        src={Rectangle}
+        alt="Background Rectangle"
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          maxHeight: "110%",
+          zIndex: 0,
+        }}
+      />
   </section>
 );
 }

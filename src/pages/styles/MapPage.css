@@ -1,0 +1,18 @@
+#map{
+    height: 100vh; 
+    padding-left: 165px;
+}
+.map-content > img {
+    top: 4849px;
+    left: 165px;
+    width: 577px;
+    height: 553px;
+}
+.map-content{
+    display: flex;
+    flex-direction: row;  
+    justify-content: flex-start; 
+}
+.map-text-content{
+ padding:100px;
+}

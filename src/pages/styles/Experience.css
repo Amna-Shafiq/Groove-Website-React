@@ -1,0 +1,50 @@
+#experience {
+    padding: 0 142px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.experience-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; 
+}
+
+h1 {
+    font-size: 40px;
+    padding-right: 86px;
+}
+
+.experience-image-scroll {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.experience-image-container {
+    display: flex;
+    gap: 25px;
+    
+}
+.experience-image-item{
+    transition: transform 0.3s ease;
+}
+.experience-image-item:hover  {
+    transform: scale(1.2); 
+}
+
+.experience-image-item img {
+    height: auto;
+    max-width: 200px;
+    display: block;
+     
+}
+.experience-image-scroll::-webkit-scrollbar {
+    display: none;
+}
+.experience-image-scroll {
+    -ms-overflow-style: none;  /* For Internet Explorer */
+    scrollbar-width: none;  /* For Firefox */
+}
+
