@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Footer from './shared/components/Footer';
 import HomePage from './pages/HomePage';
 import MallPage from './pages/MallPage';
 import BookTicketsPage from './pages/BookTicketsPage';

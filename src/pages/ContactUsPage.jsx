@@ -73,7 +73,7 @@ const ContactUsPage = React.forwardRef((prop,ref) => {
                 alt="Logo"
               />
             </div>
-            <div className="social-icons">
+            <div className="social-icons-contact">
               <a href="#">
                 <i className="fab fa-tiktok"></i>
               </a>

@@ -68,7 +68,7 @@ const HomePage = ({ scrollToSection }) => {
         Book reservation now <i className="fa fa-arrow-right"></i>
       </button>
     </div>
-    <img class="rectangle-box"
+    <img className="rectangle-box"
         src={Rectangle}
         alt="Background Rectangle"
         style={{

@@ -57,6 +57,19 @@
 .footer-bottom img {
     height: 30px; 
 }
+.social-icons-contact {
+    margin-left: auto;
+}
+
+.social-icons-contact a {
+    color: #939393;
+    font-size: 1.2rem;
+    margin-right: 21px;
+}
+
+.social-icons-contact a:hover {
+    color: #fff;
+}
 
 @media screen and (max-width:390px){
 #contact-us {
@@ -121,12 +134,12 @@
     height: auto; /* Maintain aspect ratio */
 }
 
-.social-icons {
+.social-icons-contact {
     display: flex;
     gap: 10px; /* Add spacing between icons */
 }
 
-.social-icons a i {
+.social-icons-contact a i {
     font-size: 18px; /* Adjust icon size */
     color: #d0cd75; /* Match border color */
 }
