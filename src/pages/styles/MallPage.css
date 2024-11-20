@@ -26,12 +26,12 @@ text-align: center;
 }
 @media screen and (max-width: 390px){
         #mall {
-            padding: 0 15px;
+            padding: 0 0;
         }
     
         .mall-content > h1 {
             font-size: 24px;
-            padding-top: 32px;
+            padding-top: 0;
         }
     
         .mall-content > p {
@@ -43,16 +43,10 @@ text-align: center;
             width: 100%;
             max-width: 100%;
             height: auto;
+            padding:0 0px
         }
     
-        .green-rectangle {
-            padding: 16px;
-            margin: 15px auto;
-        }
-    
-        .green-rectangle h2 {
-            font-size: 18px;
-        }
+        
     
         .heading-with-arrow {
             flex-direction: column;

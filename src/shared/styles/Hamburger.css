@@ -8,6 +8,7 @@
         right: 20px;
         z-index: 1000;
         cursor: pointer;
+        padding:31px;
   }
   .hamburger-icon,
   .hamburger-icon-close {
@@ -36,6 +37,7 @@
     padding-top: 50px;
     z-index: 999;
     overflow-x: hidden;
+    overflow-y: hidden;
   }
   
   .hamburger-content.active {
@@ -49,8 +51,8 @@
   }
   
   .nav-links li {
-    text-align: center;
-    padding: 12px 0;
+    text-align: left;
+    padding: 20px;
     border-bottom: 0.5px solid yellow;
   }
   
@@ -61,50 +63,59 @@
     padding: 10px 0;
   }
   
-  .social-media {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-  }
-  
-  .social-media a {
-    font-size: 20px;
-    color: #fff;
-  }
+ 
   
 .social-media {
-    display: flex;
-    justify-content: center;
+    
+    justify-content: left;
     gap: 15px;
-    margin-top: 10px;
+    margin-top: 189px;
+    padding-left:31px;
 }
 
 .social-media a {
     font-size: 20px;
     color: #fff;
+    padding-right: 15px;
 }
 
+
+.hamburger-content.active {
 .language-switch {
     text-align: center;
     margin-top: 10px;
+    display:block;
+}
 }
 
 .language-switch button {
     
-    padding: 8px 15px;
+    padding: 8px 31px;
     border: none;
     font-size: 14px;
     cursor: pointer;
     color: #333;
+    margin-left:31px;
 }
 
-.hamburger-icon-close {
-    /* display: flex; */
-    position: absolute;
+.hamburger-logo {
+    width: 150px;
+    margin-left:31px;
+} 
+
+
+#hamburgerIconClose {
+    display: flex; /* Use flex to align */
+    position: absolute; /* Position it relative to its parent container */
     top: 20px;
-    right: 20px;
+    /* right: 20px; */
     cursor: pointer;
-    color: #AD8749;
-}
+    color: #AD8749; /* Golden color */
+    font-size: 24px; /* Adjust size if needed */
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+  .css-btn{
+    margin-left:10px;
+  }
+  
 }

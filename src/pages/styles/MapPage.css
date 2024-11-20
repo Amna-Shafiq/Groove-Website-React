@@ -16,3 +16,33 @@
 .map-text-content{
  padding:100px;
 }
+
+@media screen and (max-width: 768px) {
+    #map {
+        padding-left: 0;
+        padding-top: 50px; /* Add some top padding */
+        height: auto; /* Let content determine height */
+    }
+
+    .map-content {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center content horizontally */
+        text-align: center; /* Center text content */
+    }
+
+    .map-content > img {
+        width: 80%; /* Scale the map image for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Add space below the image */
+    }
+
+    .map-text-content {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .css-btn {
+        margin-top: 20px; /* Add space above the button */
+        padding: 12px 24px; /* Adjust padding for mobile */
+        font-size: 14px; /* Reduce font size for smaller screens */
+    }
+}

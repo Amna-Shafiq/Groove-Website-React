@@ -67,3 +67,26 @@
         align-items: left;
         justify-content: left;
 }
+@media screen and (max-width: 390px) {
+    .cards-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        justify-items: center; /* Center cards horizontally */
+        margin:50px;
+    }
+
+    .card {
+        max-width: 100%; /* Allow card to take up full width */
+    }
+
+    .card img {
+        width: 100%; /* Responsive image */
+    }
+
+    .card-title {
+        text-align: center; /* Center-align titles */
+    }
+
+    .card-yellow-btn {
+        justify-content: center; /* Center-align the button */
+    }
+}

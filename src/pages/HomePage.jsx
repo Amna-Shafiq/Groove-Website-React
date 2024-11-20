@@ -46,12 +46,12 @@ const HomePage = ({ scrollToSection }) => {
 
       <nav className="nav-container" >
         <ul className="nav-list">
-          <li><a href="#Mall" onClick={scrollToSection}>Dine With Us</a></li>
+          <li><a href="#mall" onClick={scrollToSection}>Dine With Us</a></li>
           <li><a href="#book-tickets" onClick={scrollToSection} >Plan Your Visit</a></li>
           <li><a href="#finest-cuisine" onClick={scrollToSection}>Events</a></li>
-          <li><a href="#" onClick={scrollToSection}>View Grooves Map</a></li>
+          <li><a href="#map" onClick={scrollToSection}>View Grooves Map</a></li>
           <li><a href="#experience" onClick={scrollToSection}>Our Story</a></li>
-          <li><a href="#" onClick={scrollToSection}>Contact Us</a></li>
+          <li><a href="#contact-us" onClick={scrollToSection}>Contact Us</a></li>
         </ul>
       </nav>
     </header>
@@ -68,7 +68,7 @@ const HomePage = ({ scrollToSection }) => {
         Book reservation now <i className="fa fa-arrow-right"></i>
       </button>
     </div>
-    <img
+    <img class="rectangle-box"
         src={Rectangle}
         alt="Background Rectangle"
         style={{

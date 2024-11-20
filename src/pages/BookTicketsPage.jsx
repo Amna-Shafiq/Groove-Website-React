@@ -26,7 +26,7 @@ const BookTicketsPage = React.forwardRef((props, ref) => {
 
         {/* Main heading */}
         <h1>
-          Book General Access ticket and <br />
+          Book General Access ticket and 
           enjoy attractions for free.
         </h1>
 

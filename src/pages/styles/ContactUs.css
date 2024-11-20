@@ -57,3 +57,115 @@
 .footer-bottom img {
     height: 30px; 
 }
+
+@media screen and (max-width:390px){
+#contact-us {
+    padding: 0 32px; /* Left padding of 32px */
+    border-top: 2px solid #d0cd75;
+    font-family: 'Inter', sans-serif;
+    text-align: left; /* Left-align all text */
+}
+
+/* Top Section */
+.contact-us-top {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    gap: 15px; /* Add spacing between items */
+    margin-bottom: 20px; /* Add spacing below */
+}
+
+.contact-us-top h1 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+    line-height: 1.4; /* Improve readability */
+}
+
+.contact-us-top-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+    gap: 10px; /* Add spacing between items */
+}
+
+.contact-us-top-right img {
+    width: 120px; /* Scale down app store buttons */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Middle Section */
+.contact-us-mid {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    gap: 20px; /* Add spacing between sections */
+    margin-bottom: 20px; /* Add spacing below */
+}
+
+.contact-us-mid div {
+    line-height: 1.6; /* Maintain spacing for readability */
+    font-size: 14px; /* Adjust font size for smaller screens */
+}
+
+/* Footer Section */
+.contact-us-footer {
+    margin-top: 20px; /* Add spacing above */
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column; /* Stack logo and social icons */
+    gap: 15px; /* Add spacing between items */
+    align-items: flex-start; /* Left-align content */
+}
+
+.footer-top img {
+    width: 100px; /* Scale down logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Add spacing between icons */
+}
+
+.social-icons a i {
+    font-size: 18px; /* Adjust icon size */
+    color: #d0cd75; /* Match border color */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    display: flex;
+    flex-direction: column; /* Stack content */
+    gap: 15px; /* Add spacing between items */
+    padding-bottom: 20px;
+}
+
+.contact-nav-list {
+    display: flex;
+    flex-direction: column; /* Stack links */
+    gap: 10px; /* Add spacing between links */
+}
+
+.contact-nav-list li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 14px; /* Adjust font size */
+}
+
+.footer-cards {
+    display: flex;
+    gap: 10px; /* Add spacing between payment method icons */
+}
+
+.footer-cards img {
+    width: 50px; /* Scale down icons */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Ensure no extra space is left at the bottom */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Avoid horizontal scrolling */
+}
+
+}

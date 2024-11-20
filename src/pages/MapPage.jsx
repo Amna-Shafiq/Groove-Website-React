@@ -2,14 +2,11 @@ import React from "react";
 import "./styles/MapPage.css";
 import map from "../assets/map.png";
 
-const MapPage = () => {
+const MapPage = React.forwardRef((prop,ref) => {
   return (
-    <section id="map" className="section">
+    <section id="map" className="section" ref={ref}>
       <div className="map-content">
-        {/* Map Image */}
         <img src={map} alt="Map" />
-        
-        {/* Map Text Content */}
         <div className="map-text-content">
           <p>EXPERIENCE THE GROOVE</p>
           <h1>Find your Place</h1>
@@ -23,6 +20,6 @@ const MapPage = () => {
       </div>
     </section>
   );
-};
+});
 
 export default MapPage;

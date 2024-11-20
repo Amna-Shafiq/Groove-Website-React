@@ -47,4 +47,93 @@ h1 {
     -ms-overflow-style: none;  /* For Internet Explorer */
     scrollbar-width: none;  /* For Firefox */
 }
+@media screen and (max-width:390px){
+    /* General styles for the Experience section */
+#experience {
+    padding: 20px; /* Reduced padding for smaller screens */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: flex-start;
+    align-items: center;
+    height: auto; /* Content determines height */
+}
+
+.experience-content {
+    display: flex;
+    flex-direction: column; /* Stack text and image sections */
+    gap: 20px;
+    width: 100%; /* Ensure full-width layout */
+    align-items: center; /* Center content horizontally */
+}
+
+.text-content h1 {
+    font-size: 24px; /* Reduced font size for smaller screens */
+    text-align: center; /* Center-align text */
+    margin-bottom: 20px; /* Add space below heading */
+}
+
+.css-btn {
+    background-color: #324307;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    padding: 10px 20px;
+    font-size: 14px; /* Adjust font size for mobile */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-image-scroll {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    padding-bottom: 10px; /* Add spacing for smooth scrolling */
+}
+
+.experience-image-container {
+    display: flex;
+    gap: 15px; /* Reduced gap for mobile */
+}
+
+.experience-image-item {
+    transition: transform 0.3s ease;
+    flex: 0 0 auto; /* Prevent images from shrinking */
+    text-align: center; /* Center-align image titles */
+}
+
+.experience-image-item:hover {
+    transform: scale(1.2);
+}
+
+.experience-image-item img {
+    max-width: 150px; /* Scale images for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center images */
+}
+
+.image-title {
+    font-size: 14px; /* Smaller font for titles */
+    margin-top: 5px;
+}
+
+.experience-image-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.experience-image-scroll {
+    -ms-overflow-style: none; /* For Internet Explorer */
+    scrollbar-width: none; /* For Firefox */
+}
+
+/* Prevent excess space at the bottom */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Avoid horizontal scrolling */
+}
+
+}
 

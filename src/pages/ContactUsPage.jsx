@@ -7,9 +7,9 @@ import logo from "../assets/PHOTO-2021-06-16-18-42-19_copy_2@2x.png";
 import googleplay from "../assets/google-play.png";
 import appstore from "../assets/app-store.png";
 
-const ContactUsPage = () => {
+const ContactUsPage = React.forwardRef((prop,ref) => {
   return (
-    <section id="contact-us" className="section">
+    <section id="contact-us" className="section" ref={ref}>
       <div className="contact-us-content">
         {/* Contact Us Top Section */}
         <div className="contact-us-top">
@@ -115,6 +115,6 @@ const ContactUsPage = () => {
       </div>
     </section>
   );
-};
+});
 
 export default ContactUsPage;

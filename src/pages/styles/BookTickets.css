@@ -35,31 +35,30 @@
     margin-bottom: 63px;
 }
 .image-scroll {
-    overflow-x: auto; 
-    white-space: nowrap; 
+    overflow-x: scroll; 
+    white-space: nowrap;
     width: 100%; 
 }
 
 .image-container {
-     display: flex;
+    display: inline-flex; 
     gap: 25px; 
+    padding: 10px 0; 
 }
 
 .image-container img {
-    width: auto; 
     height: auto; 
-    max-height: none; 
-    display: inline-block; 
-    
+    cursor: pointer; 
 }
+
 
 .image-scroll::-webkit-scrollbar {
     display: none;
 }
 
 .image-scroll {
-    -ms-overflow-style: none;  
-    scrollbar-width: none; 
+    -ms-overflow-style: none;  /* For Internet Explorer */
+    scrollbar-width: none;  /* For Firefox */
 }
 .image-title {
     margin-top: 10px; 
@@ -71,3 +70,134 @@
 .image-item > h2{
     font-size: 25px;
 }
+
+#book-tickets{
+    background: linear-gradient(to right,#283606, #0F1500);
+    position: relative;
+    width: 100%;
+    min-height:100vh;
+    color:white;
+    padding-top:22px;
+}
+.green-rectangle{
+    width: 840px; 
+    height: 171px; 
+    margin: 22px 113px;
+    padding:32px;
+    background: linear-gradient(to right,#344508, #243200);
+    
+    border-radius: 25px;
+   
+}
+.heading-with-arrow {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.book-tickets-content {
+    padding:0 142px;
+    
+}
+
+.book-tickets-content > h1{
+    font-size: 40px;
+
+}
+.book-btn{
+    margin-bottom: 63px;
+}
+.image-scroll {
+    overflow-x: scroll; 
+    white-space: nowrap;
+    width: 100%; 
+}
+
+.image-container {
+    display: inline-flex; 
+    gap: 25px; 
+    padding: 10px 0; 
+}
+
+.image-container img {
+    height: auto; 
+    cursor: pointer; 
+}
+
+
+.image-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.image-scroll {
+    -ms-overflow-style: none;  /* For Internet Explorer */
+    scrollbar-width: none;  /* For Firefox */
+}
+.image-title {
+    margin-top: 10px; 
+    font-size: 16px; 
+    color: #fff;
+    font-family: "Playfair Display", serif; 
+}
+
+.image-item > h2{
+    font-size: 25px;
+}
+
+@media (max-width: 390px) {
+    #book-tickets {
+      padding: 10px;
+      text-align: center; /* Center aligns all text by default */
+    }
+  
+    .green-rectangle {
+      display: none; /* Hide the green rectangle */
+    }
+  
+    .book-tickets-content {
+      padding: 0; /* Remove excess padding */
+    }
+  
+    .book-tickets-content > h1 {
+      font-size: 24px; /* Reduce font size for better readability on mobile */
+      line-height: 1.5;
+      text-align: center; /* Center-align the heading */
+      margin: 20px 0; /* Add some spacing above and below */
+      margin:left
+    }
+  
+    .book-btn {
+      display: block;
+      width: 80%; /* Full-width button with padding */
+      margin: 20px auto; /* Center the button */
+      font-size: 16px;
+      padding: 10px 0;
+    }
+  
+    .image-scroll {
+      overflow-x: scroll; /* Allow horizontal scrolling */
+      white-space: nowrap; /* Keep images inline */
+      width: 100%;
+      margin-top: 20px; /* Add spacing above the carousel */
+      text-align: center; /* Center-align the entire section */
+    }
+  
+    .image-container {
+      display: inline-flex; /* Keep the images inline-flex */
+      gap: 15px; /* Adjust spacing between images */
+    }
+  
+    .image-container img {
+      width: 150px; /* Set a fixed width for images */
+      height: auto;
+    }
+  
+    .image-title {
+      font-size: 14px; /* Adjust font size for mobile */
+      margin-top: 5px;
+    }
+  
+    .image-item {
+      text-align: center; /* Center-align the image titles */
+    }
+  }
